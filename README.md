@@ -4,6 +4,8 @@ Make editable PowerPoint market-position charts from a small JSON spec: 2x2 quad
 
 You write a spec that describes the content; a script turns it into a native, editable PowerPoint slide, plus a PDF and a PNG preview rendered from it. Start with `SKILL.md`; it is the entry point and walks the whole workflow: pick a chart type, fill in a template, build, check the render, deliver. Two finished examples live in `examples/`, fill-in starting points in `templates/`, and the full field reference in `reference/`.
 
+The package covers the full production process behind the charts, in three stages. Stage 1 (`research/`) is a researcher process that turns a field into an evidence-graded research file: per theme, the state of the art, expectations and reality signals under a strict source discipline, and a hype cycle placement with a rationale, a time-to-plateau estimate, and a confidence rating. Stage 2 (`paper/`) develops the paper on that file as a journal article with magazine polish, from a working HTML template, with the charts embedded as figures. Stage 3 is the chart production above, serving both the paper's figures and standalone chart requests.
+
 Output formats: PPTX (the editable master), plus PDF and PNG rendered from it.
 
 ## Author

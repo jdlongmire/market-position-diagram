@@ -1,0 +1,87 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>
+@page { size: Letter; margin: 2.4cm 2.2cm 2.2cm 2.2cm;
+  @bottom-left { content: "<<SHORT TITLE>>"; font-family: "DejaVu Serif", Georgia, serif; font-style: italic; font-size: 8pt; color: #666; }
+  @bottom-right { content: counter(page); font-size: 8.5pt; color: #666; }
+  @top-center { content: "<<AUTHOR SURNAME(S)>>"; font-family: "DejaVu Sans", Helvetica, sans-serif; font-size: 7.5pt; letter-spacing: 1.5px; color: #999; } }
+@page :first { @top-center { content: none; } }
+body { font-family: "DejaVu Serif", Georgia, serif; font-size: 10.8pt; line-height: 1.62; color: #1a1a1a; text-align: justify; }
+.front { text-align: center; }
+.kicker { font-family: "DejaVu Sans", Helvetica, sans-serif; font-size: 8.5pt; letter-spacing: 3px; text-transform: uppercase; color: #555; margin-top: 46pt; }
+h1.title { font-size: 27pt; line-height: 1.15; margin: 14pt 0 0 0; }
+.deck { font-style: italic; font-size: 12.5pt; color: #333; margin: 12pt 30pt 0 30pt; line-height: 1.45; }
+.byline { font-family: "DejaVu Sans", Helvetica, sans-serif; font-size: 10pt; letter-spacing: 1.5px; text-transform: uppercase; margin-top: 22pt; }
+.dateline { font-family: "DejaVu Sans", Helvetica, sans-serif; font-size: 9pt; color: #555; margin-top: 5pt; }
+.hcae { font-family: "DejaVu Sans", Helvetica, sans-serif; font-size: 8.5pt; color: #555; margin-top: 3pt; }
+.abstract { margin: 26pt 34pt 0 34pt; font-size: 9.9pt; line-height: 1.55; text-align: justify; }
+.abstract .lbl, .keywords .lbl { font-family: "DejaVu Sans", Helvetica, sans-serif; font-weight: bold; font-size: 8.5pt; letter-spacing: 1.5px; text-transform: uppercase; }
+.keywords { margin: 10pt 34pt 0 34pt; font-size: 9.9pt; }
+h2 { font-size: 13.5pt; margin: 20pt 0 6pt 0; text-align: left; }
+p { margin: 0 0 8pt 0; }
+.dc { float: left; font-size: 36pt; line-height: 0.82; padding: 3pt 7pt 0 0; font-weight: bold; }
+.pq { font-size: 14.5pt; font-style: italic; text-align: center; line-height: 1.4; margin: 16pt 26pt; padding: 11pt 6pt; border-top: 2.2px solid #1a1a1a; border-bottom: 1px solid #999; }
+figure { margin: 14pt 0; page-break-inside: avoid; }
+figure img { width: 100%; border: 1px solid #ccc; }
+figcaption { font-family: "DejaVu Sans", Helvetica, sans-serif; font-size: 8.8pt; color: #444; margin-top: 5pt; text-align: left; line-height: 1.45; }
+table { width: 100%; border-collapse: collapse; font-family: "DejaVu Sans", Helvetica, sans-serif; font-size: 8.8pt; margin: 6pt 0 12pt 0; }
+caption { caption-side: top; text-align: left; font-size: 9.3pt; margin-bottom: 5pt; color: #1a1a1a; }
+th { text-align: left; border-bottom: 1.6px solid #1a1a1a; padding: 3pt 5pt 3pt 0; }
+td { border-bottom: 0.6px solid #ccc; padding: 3.5pt 5pt 3.5pt 0; vertical-align: top; line-height: 1.4; }
+.refs p { font-size: 9.5pt; margin: 0 0 4pt 0; padding-left: 16pt; text-indent: -16pt; text-align: left; }
+.about { border-top: 1px solid #999; margin-top: 20pt; padding-top: 10pt; font-size: 9.6pt; text-align: left; }
+.about .hd { font-family: "DejaVu Sans", Helvetica, sans-serif; font-weight: bold; font-size: 8.5pt; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 5pt; }
+</style></head><body>
+<div class="front">
+<div class="kicker"><<KICKER: FIELD &middot; TOPIC>></div>
+<h1 class="title"><<DISPLAY TITLE>></h1>
+<div class="deck"><<DECK: ONE ITALIC SENTENCE STATING THE CLAIM>></div>
+<div class="byline"><<BYLINE: AUTHOR NAMES>></div>
+<div class="dateline"><<MONTH YEAR>></div>
+<div class="hcae">Human-Curated, AI-Enabled (HCAE)</div>
+</div>
+<div class="abstract"><span class="lbl">Abstract&nbsp;&nbsp;</span><<ABSTRACT: FIELD, METHOD, HEADLINE PLACEMENTS, MAIN FINDING>></div>
+<div class="keywords"><span class="lbl">Keywords&nbsp;&nbsp;</span><<KEYWORD 1; KEYWORD 2; KEYWORD 3; KEYWORD 4; KEYWORD 5>></div>
+
+<h2>1. Introduction</h2>
+<p><span class="dc"><<F</span><<IRST LETTER, THEN THE REST OF THE OPENING PARAGRAPH: THE FIELD, WHY ITS EXPECTATIONS MATTER NOW>></p>
+<p><<METHOD IN ONE PARAGRAPH: THEME SET, EVIDENCE DISCIPLINE, PLACEMENT SCALE, AND THE HEADLINE RESULT>></p>
+<figure>
+<img src="<<FIGURE-1-FILE.png>>"/>
+<figcaption><b>Figure 1.</b> <<CAPTION: WHAT THE CHART SHOWS, AND THAT ITS PLACEMENTS COME FROM THE RESEARCH FILE NAMED HERE>></figcaption>
+</figure>
+
+<h2>2. <<SECTION TITLE: FIRST PHASE OR THEME CLUSTER>></h2>
+<p><<ARGUE THE PLACEMENTS FROM THE EVIDENCE: STATE OF THE ART, SIGNAL BALANCE, DATA POINTS. KEEP CLAIM GRADES IN THE PROSE; A FORECAST IS PHRASED AS A FORECAST.>></p>
+<div class="pq"><<PULL QUOTE: ONE SENTENCE FROM THE PAPER'S OWN ARGUMENT>></div>
+<p><<CONTINUE THE ARGUMENT>></p>
+
+<h2>3. <<SECTION TITLE: NEXT PHASE OR THEME CLUSTER>></h2>
+<p><<ARGUE THE PLACEMENTS FROM THE EVIDENCE>></p>
+<table>
+<caption><b>Table 1.</b> <<CAPTION: PLACEMENT SUMMARY, REPRODUCED FROM THE RESEARCH FILE>></caption>
+<tr><th style="width:34%">Theme</th><th style="width:10%">t</th><th style="width:24%">Time to plateau</th><th>Confidence</th></tr>
+<tr><td><<Theme 1>></td><td><<0.00>></td><td><<estimate>></td><td><<high/medium/low>></td></tr>
+<tr><td><<Theme 2>></td><td><<0.00>></td><td><<estimate>></td><td><<high/medium/low>></td></tr>
+<tr><td colspan="4"><<ONE ROW PER THEME; VALUES UNCHANGED FROM THE RESEARCH FILE SUMMARY TABLE>></td></tr>
+</table>
+
+<h2>4. Cross-cutting findings</h2>
+<p><<THE RESEARCH FILE'S CROSS-CUTTING FINDINGS, ARGUED AS SYNTHESIS>></p>
+
+<h2>5. Limitations</h2>
+<p><<THIN THEMES AND LOW CONFIDENCE RATINGS, STALE SOURCES, UNRESOLVED CONTRADICTIONS, AND THE JUDGMENT INHERENT IN ANY PLACEMENT>></p>
+
+<h2>6. Conclusion</h2>
+<p><<WHAT THE PLACEMENTS MEAN FOR A READER DECIDING WHERE TO SPEND ATTENTION OR MONEY, INSIDE WHAT THE EVIDENCE SUPPORTS>></p>
+
+<h2>References</h2>
+<div class="refs">
+<p>[1] <<SOURCE NAME. "TITLE." PUBLISHER OR VENUE, DATE. URL>></p>
+<p>[2] <<SOURCE NAME. "TITLE." PUBLISHER OR VENUE, DATE. URL>></p>
+<p><<ONE ENTRY PER SOURCE THE PLACEMENTS REST ON, PRIMARY SOURCES LISTED INDIVIDUALLY>></p>
+</div>
+
+<div class="about">
+<div class="hd">About the Authors</div>
+<p><<AUTHOR BIOS, FOLLOWING THE MODEL ARTICLE'S TREATMENT, CLOSING WITH THE HCAE STATEMENT>></p>
+</div>
+</body></html>
