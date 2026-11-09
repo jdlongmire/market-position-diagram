@@ -1,0 +1,26 @@
+// TEMPLATE: 2x2 market-position quadrant chart.
+// Copy this file, replace every <<...>> with real content, and set each
+// item's x and y in 0..1 (x: left to right, y: bottom to top).
+// Quadrant names default to Leaders / Challengers / Visionaries /
+// Niche Players; rename them here or set one to "" to hide it.
+// Optional per item: "label_side": "auto" (default), "left", "right",
+// "above" or "below" to steer a crowded label.
+{
+  "name": "quadrant_example",
+  "title": "<<Market or category name>>",
+  "subtitle": "<<One line of context, or delete this field>>",
+  "x_axis": { "label": "Completeness of Vision" },
+  "y_axis": { "label": "Ability to Execute" },
+  "quadrants": {
+    "top_right": "Leaders",
+    "top_left": "Challengers",
+    "bottom_right": "Visionaries",
+    "bottom_left": "Niche Players"
+  },
+  "items": [
+    { "name": "<<Vendor or option A>>", "x": 0.78, "y": 0.82 },
+    { "name": "<<Vendor or option B>>", "x": 0.30, "y": 0.74 },
+    { "name": "<<Vendor or option C>>", "x": 0.70, "y": 0.30 },
+    { "name": "<<Vendor or option D>>", "x": 0.22, "y": 0.20 }
+  ]
+}

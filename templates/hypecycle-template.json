@@ -1,0 +1,20 @@
+// TEMPLATE: hype cycle chart.
+// Copy this file, replace every <<...>> with real content, and set each
+// item's t in 0..1: its position along the curve from left to right.
+// Rough guide: 0.05 innovation trigger, 0.21 peak, 0.45 trough,
+// 0.68 slope of enlightenment, 0.90 plateau of productivity.
+// Optional per item: "label_side": "auto" (default), "left", "right",
+// "above" or "below" to steer a crowded label.
+// "y_label" defaults to "Expectations".
+{
+  "name": "hypecycle_example",
+  "title": "<<Technology area>> Hype Cycle",
+  "subtitle": "<<One line of context, or delete this field>>",
+  "y_label": "Expectations",
+  "items": [
+    { "name": "<<Emerging item>>", "t": 0.06 },
+    { "name": "<<Peaking item>>", "t": 0.20 },
+    { "name": "<<Cooling item>>", "t": 0.45 },
+    { "name": "<<Maturing item>>", "t": 0.88 }
+  ]
+}
